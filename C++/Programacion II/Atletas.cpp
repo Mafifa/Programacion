@@ -1,8 +1,8 @@
 #include <iostream>
+#include <string.h>
 using namespace std;
-
-const int MaxAtletas = 30;
-const int MaxJueces = 9;
+#define MaxAtletas 30
+#define MaxJueces 30
 
 // Estructura para la información de los jueces
 struct Juez
@@ -147,15 +147,8 @@ void MostrarJuecesPuntajeMayor(Atleta atletas[], Juez jueces[], int numAtletas, 
   {
     for (int j = 0; j < numJueces; j++)
     {
-      // Comparamos los caracteres uno a uno hasta encontrar el final de la cadena
-      int k = 0;
-      while (atletas[i].pais[k] != '\0' && jueces[j].pais[k] != '\0' && atletas[i].pais[k] == jueces[j].pais[k])
-      {
-        k++;
-      }
-
-      // Si ambos llegaron al final de la cadena al mismo tiempo, son iguales
-      if (atletas[i].pais[k] == '\0' && jueces[j].pais[k] == '\0' && atletas[i].intentos[0].puntaje > 8.75)
+      // Busamos el pais y la comparacion del puntaje
+      if (strcmp(atletas[i].pais, jueces[j].pais) == 0 && atletas[i].intentos[0].puntaje > 8.75)
       {
         cout << "Nombre del Juez: " << jueces[j].nombre << ", País del Juez: " << jueces[j].pais << endl;
       }
@@ -165,11 +158,34 @@ void MostrarJuecesPuntajeMayor(Atleta atletas[], Juez jueces[], int numAtletas, 
 
 int main()
 {
+  int cantidadAtletas, cantidadJueces;
   Atleta atletas[MaxAtletas];
   Juez jueces[MaxJueces];
 
+  printf("Ingrese cantidad de atletas (maximo 30): ");
+  cin >> cantidadAtletas;
+  do
+  {
+    if ((cantidadAtletas < 0) || (cantidadAtletas > 30))
+    {
+      printf("Ingrese una cantidad valida: ");
+      cin >> cantidadAtletas;
+    }
+  } while ((cantidadAtletas < 0) || (cantidadAtletas > 30));
+
+  printf("Ingrese cantidad de jueces (maximo 9) : ");
+  cin >> cantidadJueces;
+  do
+  {
+    if ((cantidadJueces < 0) || (cantidadJueces > 9))
+    {
+      printf("Ingrese una cantidad valida: ");
+      cin >> cantidadJueces;
+    }
+  } while ((cantidadJueces < 0) || (cantidadJueces > 9));
+
   // Cargar información de los atletas
-  for (int i = 0; i < MaxAtletas; i++)
+  for (int i = 0; i < cantidadAtletas; i++)
   {
     cout << "Datos del atleta #" << i + 1 << ":" << endl;
     CargarAtleta(atletas[i]);
@@ -178,7 +194,7 @@ int main()
   }
 
   // Cargar información de los jueces
-  for (int i = 0; i < MaxJueces; i++)
+  for (int i = 0; i < cantidadJueces; i++)
   {
     cout << "Datos del juez #" << i + 1 << ":" << endl;
     cout << "Ingrese el nombre del juez: ";
@@ -194,9 +210,9 @@ int main()
   }
 
   // Ejemplo de uso de funciones
-  MostrarAtletasSinSaltoBDificultad(atletas, MaxAtletas);
+  MostrarAtletasSinSaltoBDificultad(atletas, cantidadAtletas);
   cout << "------------------------------------" << endl;
-  MostrarJuecesPuntajeMayor(atletas, jueces, MaxAtletas, MaxJueces);
+  MostrarJuecesPuntajeMayor(atletas, jueces, cantidadAtletas, cantidadJueces);
 
   return 0;
 }
