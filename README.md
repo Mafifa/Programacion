@@ -7,5 +7,5 @@ En cada carperta marcada con el lenguaje especifico se encuentra una carpeta lla
 ## ARCHIVOS ADICIONALES
 Al igual que en cada carpeta tiene un contenido general, tambien tiene un contenido unico, son ejercicios que realizados especialmente en ese lenguaje de programacion el cual facilita y denota el aspecto unico de este.
 
-#LISTA DE EJERCICIOS GENERALES
+## LISTA DE EJERCICIOS GENERALES
 
