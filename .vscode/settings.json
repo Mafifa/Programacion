@@ -2,5 +2,7 @@
   "files.associations": {
     "iostream": "cpp",
     "utility": "cpp"
-  }
+  },
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "basic"
 }

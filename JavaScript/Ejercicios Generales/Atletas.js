@@ -1,5 +1,5 @@
 const MaxAtletas = 30;
-const MaxJueces = 30;
+const MaxJueces = 9;
 
 // Estructura para la información de los jueces
 class Juez {
