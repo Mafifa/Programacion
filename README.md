@@ -20,7 +20,7 @@ Al igual que en cada carpeta tiene un contenido general, tambien tiene un conten
 
 ## LISTA DE EJERCICIOS GENERALES
 
-- # Vendedodres y Articulos
+- ### Vendedodres y Articulos
 
   - Definir las estructuras.
   - Realizar una funcion para cargar los datos.
@@ -29,12 +29,12 @@ Al igual que en cada carpeta tiene un contenido general, tambien tiene un conten
   - Funcion para especificar cual es el producto mas vendido.
   - Dando el nombre de un curso, muestre las instituciones que lo dictan y cual es su costo.
 
-- # Municipios
+- ### Municipios
 
   - Declarar y cargar las estructuras y variables.
   - Funcion que calcule y muestre el monto del presupuesto a cada municipio e indique que porcentaje representa del presupuesto estadal (este monto se obtiene a partir de los sectores).
   - Dado un municipio muestre nombre y poblacion de los sectores que poseen la mayor y la menor cantidad de hombres.
   - determine cual de los municipios fundados en el segundo trimestre del año, tiene menor presupuesto asignado e indique el monto.
 
-- # Medicos y Hospitales
-- # Atletas
+- ### Medicos y Hospitales
+- ### Atletas
