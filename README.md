@@ -6,11 +6,11 @@ En este repositorio se encontraran ejercicios resueltos y actvidades que pertene
 
 En cada carperta marcada con el lenguaje especifico se encuentra una carpeta llamada "Ejercicios generales" esta contiene los ejercicios realizado en la lista siguiente, es importante que los ejercicios se repiten mas la logica de programacion varia en base al programa, pero el fin es el mismo, como ejemplo tenemos la declaracion de estructuras:
 C++ :
-!(Estructuras en C++)[Screenshots\code-clases-C++.png]
+![Estructuras en C++](Screenshots\code-clases-C++.png)
 JavaScript:
-!(Clases de JS)[Screenshots\code-clases-js.png]
+![Clases de JS](Screenshots\code-clases-js.png)
 Python:
-!(Clases de Python)[Screenshots\code-clases-paython.png]
+![Clases de Python](Screenshots\code-clases-paython.png)
 
 El fin de este, es que se pueda ver la estructura general e implementacion del lenguaje de programacion ya conociendo la logica del ejercicio base.
 
