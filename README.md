@@ -39,3 +39,11 @@ Al igual que en cada carpeta tiene un contenido general, tambien tiene un conten
 
 - ### Medicos y Hospitales
 - ### Atletas
+  - Declarar y cargar las estructuras y variables.
+
+  - Función para determinar el puntaje de cada atleta.
+
+  - Muestre nombre y país de los atletas que no realizaron saltos con dificultad B.
+
+  - Nombre y Pais de los jueces que otorgaron un puntaje mayor de 8.75 a su mismo país en el primer
+    salto.
