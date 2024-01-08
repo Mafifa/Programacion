@@ -5,13 +5,14 @@ En este repositorio se encontraran ejercicios resueltos y actvidades que pertene
 ## LOGICA DEL REPOSITORIO
 
 En cada carperta marcada con el lenguaje especifico se encuentra una carpeta llamada "Ejercicios generales" esta contiene los ejercicios realizado en la lista siguiente, es importante que los ejercicios se repiten mas la logica de programacion varia en base al programa, pero el fin es el mismo, como ejemplo tenemos la declaracion de estructuras:
-C++ :
-!(Estructuras en C++)[Screenshots\code-clases-C++.png]
-JavaScript:
-!(Clases de JS)[Screenshots\code-clases-js.png]
-Python:
-!(Clases de Python)[Screenshots\code-clases-paython.png]
+- C++ :
+<img src="Screenshots/code-clases-C++.png" alt="Clases C" style="width:300px;"/>
 
+- JavaScript:
+<img src="Screenshots/code-clases-js.png" alt="Logo de Markdown" style="width:600px;"/>
+
+- Python:
+<img src="Screenshots/code-clases-paython.png" alt="Logo de Markdown" style="width:600px;"/>
 El fin de este, es que se pueda ver la estructura general e implementacion del lenguaje de programacion ya conociendo la logica del ejercicio base.
 
 ## ARCHIVOS ADICIONALES
@@ -20,7 +21,7 @@ Al igual que en cada carpeta tiene un contenido general, tambien tiene un conten
 
 ## LISTA DE EJERCICIOS GENERALES
 
-- # Vendedodres y Articulos
+- ### Vendedodres y Articulos
 
   - Definir las estructuras.
   - Realizar una funcion para cargar los datos.
@@ -29,12 +30,20 @@ Al igual que en cada carpeta tiene un contenido general, tambien tiene un conten
   - Funcion para especificar cual es el producto mas vendido.
   - Dando el nombre de un curso, muestre las instituciones que lo dictan y cual es su costo.
 
-- # Municipios
+- ### Municipios
 
   - Declarar y cargar las estructuras y variables.
   - Funcion que calcule y muestre el monto del presupuesto a cada municipio e indique que porcentaje representa del presupuesto estadal (este monto se obtiene a partir de los sectores).
   - Dado un municipio muestre nombre y poblacion de los sectores que poseen la mayor y la menor cantidad de hombres.
   - determine cual de los municipios fundados en el segundo trimestre del año, tiene menor presupuesto asignado e indique el monto.
 
-- # Medicos y Hospitales
-- # Atletas
+- ### Medicos y Hospitales
+- ### Atletas
+  - Declarar y cargar las estructuras y variables.
+
+  - Función para determinar el puntaje de cada atleta.
+
+  - Muestre nombre y país de los atletas que no realizaron saltos con dificultad B.
+
+  - Nombre y Pais de los jueces que otorgaron un puntaje mayor de 8.75 a su mismo país en el primer
+    salto.
