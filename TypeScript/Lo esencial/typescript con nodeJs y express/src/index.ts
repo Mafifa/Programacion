@@ -1,10 +1,10 @@
 import express from "express";
 import diaryRouter from "./routes/diaries.ts";
 
+const PORT = 3000;
+
 const app = express();
 app.use(express.json()); //Middlaware que transformala req.body a un json
-
-const PORT = 3000;
 
 app.get("/ping", (_req, res) => {
   console.log("Alguien pingeo");
