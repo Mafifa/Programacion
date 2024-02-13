@@ -1,7 +1,7 @@
-import express from "express";
+import { Router } from "express";
 import * as diaryServices from "../services/diaryServices.ts";
 
-const router = express.Router();
+const router = Router();
 
 router.get("/", (_req, res) => {
   res.send(diaryServices.getEntriesWithoutSensitiveInfo());
