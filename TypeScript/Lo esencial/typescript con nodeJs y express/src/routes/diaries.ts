@@ -12,8 +12,20 @@ router.get("/:id", (req, res) => {
   return diary != null ? res.send(diary) : res.sendStatus(404);
 });
 
-router.post("/", (_req, res) => {
-  res.send("saving a diary");
+router.post("/", (req, res) => {
+  try {
+    const { date, weather, visiblity, comment } = req.body;
+
+    const newDiaryEntry = diaryServices.addDiary({
+      date,
+      weather,
+      visiblity,
+      comment,
+    });
+    res.json(newDiaryEntry);
+  } catch (e) {
+    res.status(400).send(e.message);
+  }
 });
 
 export default router;
