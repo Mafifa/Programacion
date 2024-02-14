@@ -2,7 +2,7 @@ import response from "./mock/response.json";
 import noReponse from "./mock/no-response.json.json";
 
 const API_KEY = 122166861104007759;
-const BASE_URL = `https://superheroapi.com/api/${API_KEY}/search/batman`;
+const BASE_URL = `https://superheroapi.com/api/${API_KEY}/search/`;
 
 let heroName = document.getElementById("name");
 let show = document.getElementById("show");
