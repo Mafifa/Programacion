@@ -1,14 +1,16 @@
 import { useRef } from "react";
 import { useHero, heros } from "./hooks/useHero";
+import { URL } from "./assets/API";
 
 function App() {
   const { hero: mappedHero } = useHero();
   const inputRef = useRef();
   const HAS_HEROS = heros?.length > 0;
 
-  const handleSubbmit = () => {
+  const handleSubbmit = (e) => {
+    e.preventDefault();
     const value = inputRef.current.value;
-    console.log(value);
+    fetch(URL + value).then();
   };
   function heroRender() {
     return (
@@ -57,7 +59,6 @@ function App() {
           />
           <button
             type="button"
-            onClick={handleClick}
             className="bg-blue-500 m-3 p-2 rounded-xl font-bold"
           >
             screch
