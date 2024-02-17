@@ -1,0 +1,17 @@
+{
+  "name": "javascripts-projects",
+  "version": "1.0.0",
+  "description": "Just a repository where I hace my practices in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mafifa",
+  "license": "ISC",
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "devDependencies": {
+    "standard": "^17.1.0"
+  }
+}
