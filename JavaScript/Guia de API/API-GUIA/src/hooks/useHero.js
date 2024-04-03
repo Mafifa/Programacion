@@ -1,5 +1,7 @@
 import responseJSON from "../assets/mock/response.json";
+
 export const heros = responseJSON.results;
+
 export function useHero() {
   const mappedHero = heros?.map((hero) => ({
     id: hero.id,
